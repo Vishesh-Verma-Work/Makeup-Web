@@ -1,0 +1,84 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #131212;
+  color: rgb(255, 255, 255);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 3rem;
+  box-shadow: 0 0 2rem rgba(122, 122, 122, 0.1);
+}
+
+.header__logo a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.header__logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.header__nav {
+  display: flex;
+  gap: 15px;
+}
+
+.header__link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  padding: 5px 10px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.header__link:hover {
+  color: #3f3f3f;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.header__toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header__nav {
+    display: none;
+    flex-direction: column;
+    background-color: #131212;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000;
+  }
+
+  .header__link {
+    display: block;
+    padding: 10px 20px;
+  }
+
+  .header__toggle {
+    display: block;
+  }
+
+  /* When the 'active' class is added, show the menu */
+  .header__nav.active {
+    display: flex;
+  }
+}
