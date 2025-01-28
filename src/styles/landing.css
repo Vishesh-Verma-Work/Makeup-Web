@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: #fdf9f6;
+  background-color: #faf5f0;
   color: #333;
 }
 
@@ -10,24 +10,27 @@ body {
 .hero {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-image: url('https://media.istockphoto.com/id/2183713871/photo/beautiful-young-woman-applying-mascara-on-black-background-closeup-space-for-text.jpg?s=2048x2048&w=is&k=20&c=An_4yXz1QAM1ED65aANgLS0QVDM9pWiku_BKAWkKKJ4=');
-  background-size: cover;
-  background-position: center;
-  height: 90vh;
-  padding: 0 5%;
-  color: #fff;
   position: relative;
+  height: 95vh;
+  /* padding: 0 5%; */
 }
 
 .hero__content {
-  max-width: 50%;
+  z-index: 2;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff;
+  max-width: 40%;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .hero__heading {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  color: #ffffff;
   animation: fadeInLeft 1s ease-out;
 }
 
@@ -35,6 +38,19 @@ body {
   font-size: 1.2rem;
   line-height: 1.6;
   animation: fadeInLeft 1.5s ease-out;
+  color: #ffedda;
+}
+
+.hero__video-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Services Section */
@@ -44,12 +60,13 @@ body {
 }
 
 .section__heading {
-  background-color: #d87093a7;
+  background-color: #ffcbcb;
   padding: 8px;
-  font-size: 2.5rem;
+  font-size: 4.5rem;
+  font-family: "Bonheur Royale", serif;
   text-align: center;
   margin-bottom: 2rem;
-  color: white;
+  color: #333;
 }
 
 .services__cards {
@@ -82,7 +99,7 @@ body {
 .card__title {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  color: #d87093;
+  color: #ff8a8a;
 }
 
 .card__description {
@@ -108,7 +125,7 @@ body {
 .testimonial {
   font-style: italic;
   background: #fff;
-  border-left: 5px solid #d87093;
+  border-left: 5px solid #ff8a8a;
   padding: 1.5rem;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -133,123 +150,16 @@ body {
   }
 }
 
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 1200px) {
-  .hero__heading {
-    font-size: 2.5rem;
-  }
-
-  .hero__description {
-    font-size: 1rem;
-  }
-
-  .services__cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card {
-    max-width: 90%;
-    margin-bottom: 2rem;
-  }
-
-  .card__title {
-    font-size: 1.3rem;
-  }
-
-  .card__description {
-    font-size: 0.9rem;
-  }
-
-  .testimonial__wrapper {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-}
-
+/* Media Queries */
 @media (max-width: 768px) {
-  .hero {
-    height: 80vh;
-    padding: 0 3%;
+  .hero__content {
+    max-width: 80%;
+    left: 5%;
   }
-
   .hero__heading {
     font-size: 2rem;
   }
-
   .hero__description {
-    font-size: 0.9rem;
-  }
-
-  .services__cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card {
-    max-width: 90%;
-    margin-bottom: 1.5rem;
-  }
-
-  .card__title {
-    font-size: 1.2rem;
-  }
-
-  .card__description {
-    font-size: 0.9rem;
-  }
-
-  .testimonial__wrapper {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero {
-    height: 70vh;
-    padding: 0 2%;
-  }
-
-  .hero__heading {
-    font-size: 1.5rem;
-  }
-
-  .hero__description {
-    font-size: 0.8rem;
-  }
-
-  .services__cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card {
-    max-width: 90%;
-    margin-bottom: 1.5rem;
-  }
-
-  .card__title {
-    font-size: 1.1rem;
-  }
-
-  .card__description {
-    font-size: 0.8rem;
-  }
-
-  .testimonial__wrapper {
-    flex-direction: column;
-    gap: 1.5rem;
+    font-size: 1rem;
   }
 }
