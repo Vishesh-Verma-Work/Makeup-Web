@@ -1,0 +1,134 @@
+
+.contactForm-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 1100px;
+    margin: 2rem auto;
+    border: .2px solid black; 
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.263); 
+  }
+  
+.contactForm-content {
+    flex: 1;
+  }
+  
+  .contactForm-content h2 {
+    font-size: 2.4rem;
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .contactForm-content h3 {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .contactForm-content p {
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  /* Form & Input Fields */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .contactForm-row {
+    display: flex;
+    gap: 10px;
+  }
+  
+  input,
+  textarea {
+    flex: 1;
+    /* width: 100%; */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* Textarea Height */
+  textarea {
+    height: 120px;
+  }
+  
+  /* Button */
+  button {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #000000;
+  }
+  
+  /* Contact Image */
+  .contactForm-imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contactForm-imageContainer img {
+    width: 100%;
+    margin: 0 2rem;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  /* Contact Info Section */
+  .contactForm-info {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ebebeb;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 4rem;
+  }
+  
+  /* 📌 Mobile Responsiveness */
+  @media screen and (max-width: 768px) {
+    .contactForm-container {
+    margin: 0;
+      flex-direction: column;
+      padding: 1.5rem;
+      border : none
+    }
+  
+    .contactForm-imageContainer {
+      order: -1;
+    }
+  
+    .contactForm-imageContainer img {
+      width: 100%;
+      height: auto;
+      max-width: 400px;
+    }
+  
+    .contactForm-row {
+      flex-direction: column;
+      gap: 12px;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  

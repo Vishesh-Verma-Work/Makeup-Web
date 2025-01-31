@@ -17,7 +17,7 @@ const Header = () => {
         </div>
         
         <nav className={`header__nav ${data ? 'active' : ''}`}>
-          <NavLink to="/idk" className="header__link">Home</NavLink>
+          <NavLink to="/" className="header__link">Home</NavLink>
           <NavLink to="/visual" className="header__link">Social Links</NavLink>
           <NavLink to="/processMails" className="header__link">Gallery</NavLink>
           <NavLink to="/dashboard" className="header__link">Services</NavLink>
