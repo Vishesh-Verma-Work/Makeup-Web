@@ -1,5 +1,4 @@
 
-/* General Styling */
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
@@ -81,7 +80,6 @@ body {
     display: block;
   }
 
-  /* When the 'active' class is added, show the menu */
   .header__nav.active {
     display: flex;
   }

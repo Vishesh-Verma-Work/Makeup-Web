@@ -1,0 +1,120 @@
+.gallery-upper {
+    /* padding: 2rem 15rem; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    /* background-color: red; */
+}
+
+.g-space {
+    margin: 4rem auto;
+}
+
+.gallery-upper img {
+    border-radius: 1rem;
+    width: 35%;
+    max-width: 400px;
+    height: auto;
+}
+
+/* Bridal Makeup Description */
+.bridalMakeup-description {
+    text-align: justify;
+    font-size: 1.2rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Gallery Heading */
+.gallery-heading {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    margin: 3rem 0 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    position: relative;
+    font-family: "Roboto", serif;
+}
+
+/* Underline for Heading */
+.gallery-heading::after {
+    content: "";
+    width: 450px;
+    height: 4px;
+    background: #6e6e6e;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+/* 📌 Responsive Adjustments */
+@media screen and (max-width: 1024px) {
+    .g-space {
+        margin: 2rem auto;
+    }
+    .gallery-upper {
+        padding: 2rem 5rem;
+    }
+
+    .gallery-upper img {
+        width: 80%;
+    }
+
+    .bridalMakeup-description {
+        font-size: 1.1rem;
+    }
+    .gallery-heading::after {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gallery-upper {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .gallery-upper img {
+        width: 100%;
+    }
+
+    .bridalMakeup-description {
+        font-size: 1rem;
+    }
+
+    .gallery-heading {
+        font-size: 2.8rem;
+    }
+
+    .gallery-heading::after {
+        width: 350px;
+        height: 3px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gallery-upper {
+        padding: 1.5rem;
+    }
+
+    .gallery-upper img {
+        width: 100%
+    }
+
+    .gallery-heading {
+        font-size: 2.1rem;
+        letter-spacing: 1px;
+    }
+
+    .gallery-heading::after {
+        width: 300px;
+        height: 2px;
+    }
+}

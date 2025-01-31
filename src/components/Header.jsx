@@ -3,10 +3,10 @@ import '../styles/header.css';
 import { NavLink } from 'react-router-dom';
 
 const Header = () => {
-  const [data, setData] = useState(false); // State to toggle visibility of mobile menu
+  const [data, setData] = useState(false); 
   
   const show = () => {
-    setData(prevData => !prevData);  // Toggle the menu visibility
+    setData(prevData => !prevData);  
   };
 
   return (
@@ -17,12 +17,12 @@ const Header = () => {
         </div>
         
         <nav className={`header__nav ${data ? 'active' : ''}`}>
-          <NavLink to="/" className="header__link">Home</NavLink>
-          <NavLink to="/visual" className="header__link">Social Links</NavLink>
-          <NavLink to="/processMails" className="header__link">Gallery</NavLink>
-          <NavLink to="/dashboard" className="header__link">Services</NavLink>
-          <NavLink to="/show" className="header__link">Book Appointment</NavLink>
-          <NavLink to="/contact" className="header__link">Contact Us</NavLink>
+          <NavLink to="/" className="header__link" onClick={show}>Home</NavLink>
+          <NavLink to="/visual" className="header__link" onClick={show}>Social Links</NavLink>
+          <NavLink to="/gallery" className="header__link" onClick={show}>Gallery</NavLink>
+          <NavLink to="/dashboard" className="header__link" onClick={show}>Services</NavLink>
+          <NavLink to="/show" className="header__link" onClick={show}>Book Appointment</NavLink>
+          <NavLink to="/contact" className="header__link" onClick={show}>Contact Us</NavLink>
         </nav>
         
         <div className="header__toggle" id="headerToggle" onClick={show}>

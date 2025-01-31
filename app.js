@@ -8,12 +8,14 @@ import Header from "./src/components/Header";
 import Footer from "./src/components/Footer";
 import Landing from "./src/components/Landing";
 import ContactPAGE from "./src/components/ContactPAGE";
-
+import Gallery from "./src/components/Gallery";
+import ScrTop from "./src/components/ScrTop";
 
 const Main = ()=>{
     return(
         <>
         <Header/>
+        <ScrTop/>
         <Outlet/>
         <Footer/>
         </>
@@ -34,6 +36,11 @@ const appRouter = createBrowserRouter([
           {
             path : "/contact",
             element : <ContactPAGE/>,
+            errorElement : <Error/>
+          },
+          {
+            path : "/gallery",
+            element : <Gallery/>,
             errorElement : <Error/>
           }
       ]
