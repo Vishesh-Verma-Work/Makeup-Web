@@ -4,6 +4,11 @@ import vdo from "url:../utils/bgVdo.mp4";
 import FeaturesPic from './FeaturesPic';
 import GlimsPic2 from './GlimsPic2.jsx';
 import Reels from "./Reels"
+import Studio from './Studio.jsx';
+import DemoAbout from './DemoAbout.jsx'
+
+import "../styles/studio.css"
+import "../styles/demoAbout.css"
 import '../styles/featuresPic.css';
 import '../styles/reels.css';
 import '../styles/glimsPic2.css';
@@ -46,6 +51,21 @@ const Landing = () => {
       <h2 className="section__heading">Glimpses of Glamour</h2>
         {<GlimsPic2/>}
       </div>
+
+
+      {/*Studio Section */}
+      {/* <div className="studio">
+      <h2 className="section__heading">Studio Setup</h2>
+        {<Studio/>}
+      </div> */}
+
+      {/*demoAbout Section */}
+      {/* <div className="demoAbout">
+      <h2 className="section__heading">About Me</h2>
+        {<DemoAbout/>}
+      </div> */}
+
+
 
       {/* Services Section */}
       <section className="services">

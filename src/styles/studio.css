@@ -1,0 +1,74 @@
+
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  
+  .header-title {
+    font-size: 36px;
+    color: #b3586a;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    font-size: 22px;
+    color: #d07f6e;
+    margin-bottom: 20px;
+  }
+  
+  .quote {
+    font-style: italic;
+    font-size: 18px;
+    color: #b3586a;
+    margin-bottom: 30px;
+  }
+  
+  .intro {
+    padding: 40px;
+    text-align: center;
+    background-color: #faf2f2;
+  }
+  
+  .intro-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  .academy-name {
+    font-weight: bold;
+    color: #b3586a;
+  }
+  
+  .know-more {
+    background-color: #b3586a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .know-more:hover {
+    background-color: #d07f6e;
+  }
+  
+  .image-gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  
+  .image-container {
+    width: 30%;
+  }
+  
+  .image-container img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }

@@ -22,7 +22,7 @@ const Header = () => {
           <NavLink to="/processMails" className="header__link">Gallery</NavLink>
           <NavLink to="/dashboard" className="header__link">Services</NavLink>
           <NavLink to="/show" className="header__link">Book Appointment</NavLink>
-          <NavLink to="/pushMail" className="header__link">Contact Us</NavLink>
+          <NavLink to="/contact" className="header__link">Contact Us</NavLink>
         </nav>
         
         <div className="header__toggle" id="headerToggle" onClick={show}>
